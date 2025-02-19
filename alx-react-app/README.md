@@ -1,4 +1,4 @@
-# ALX React App
+# alx-react-app
 
 This is a React application setup with Vite.
 
