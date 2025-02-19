@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+# ALX React App
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-  },
-});
+This is a React application setup with Vite.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Install dependencies**:
+   ```bash
+   npm install
