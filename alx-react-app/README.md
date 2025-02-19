@@ -9,7 +9,7 @@ To get started with this project, follow these steps:
 1. **Install dependencies**:
    ```bash
    npm install
-Run the development server:
+Run the development server: https://glorious-space-sniffle-69gpq6jw4gj9crvrg-3000.app.github.dev/
 
 bash
 npm run dev
