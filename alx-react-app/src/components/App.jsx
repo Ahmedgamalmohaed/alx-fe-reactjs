@@ -11,3 +11,6 @@ function App() {
   );
 }
 export default App;
+import Header from './Header';,
+import MainContent from './MainContent';, and
+import Footer from './Footer';.
