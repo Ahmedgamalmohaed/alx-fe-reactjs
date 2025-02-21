@@ -26,5 +26,23 @@ function App() {
     </div>
   );
 }
+import Counter from './components/Counter';
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <UserProvider userData={userData}>
+          <Header />
+          <MainContent />
+          <ProfilePage />
+          <Counter />  {/* Add Counter component here */}
+          <UserProfile />
+          <Footer />
+        </UserProvider>
+      </header>
+    </div>
+  );
+}
+
 
 export default App;
