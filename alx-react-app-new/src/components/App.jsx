@@ -3,6 +3,7 @@ import UserProfile from './components/UserProfile';
 import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
+import Counter from './components/Counter';
 import ProfilePage from './ProfilePage'; // Import ProfilePage
 import { UserProvider } from './components/UserContext'; // Import UserProvider
 
@@ -26,7 +27,6 @@ function App() {
     </div>
   );
 }
-import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
