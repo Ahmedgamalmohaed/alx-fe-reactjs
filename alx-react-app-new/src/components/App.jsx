@@ -20,12 +20,12 @@ function App() {
           <Header />
           <MainContent />
           <ProfilePage /> {/* Wrap ProfilePage inside UserProvider */}
-          <UserProfile />
+          <UserProfile name="Alice" age={25} bio="Loves hiking and photography" />
           <Footer />
         </UserProvider>
       </header>
     </div>
   );
 }
-function App() {
+
 export default App;
