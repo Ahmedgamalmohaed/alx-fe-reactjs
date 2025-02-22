@@ -30,22 +30,14 @@ function App() {
 function App() {
 export default App;
 import React from 'react';
-import PropTypes from 'prop-types';
+import UserProfile from './components/UserProfile';
 
-const UserProfile = ({ name, age, bio }) => {
+function App() {
   return (
-    <div>
-      <h1>{name}'s Profile</h1>
-      <p>Age: {age}</p>
-      <p>Bio: {bio}</p>
+    <div className="App">
+      <UserProfile name="Alice" age={25} bio="Loves hiking and photography" />
     </div>
   );
-};
+}
 
-UserProfile.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
-  bio: PropTypes.string.isRequired,
-};
-
-export default UserProfile;  
+export default App;
