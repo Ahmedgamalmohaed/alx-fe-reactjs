@@ -1,15 +1,20 @@
-import React, { useContext } from 'react';
-import { UserContext } from './components/UserContext';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const ProfilePage = () => {
-  const user = useContext(UserContext);
-
+const UserProfile = ({ name, age, bio }) => {
   return (
     <div>
-      <h1>{user.name}</h1>
-      <p>{user.email}</p>
+      <h1>{name}'s Profile</h1>
+      <p>Age: {age}</p>
+      <p>Bio: {bio}</p>
     </div>
   );
 };
 
-export default ProfilePage;
+UserProfile.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  bio: PropTypes.string.isRequired,
+};
+
+export default UserProfile;
