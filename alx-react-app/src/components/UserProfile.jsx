@@ -9,3 +9,4 @@ const UserProfile = () => {
   );
 };
 export default UserProfile;
+src/components/UserProfile.jsx doesn't contain: ["{props.name}", "{props.age}", "Age", "{props.bio}", "Bio"]
