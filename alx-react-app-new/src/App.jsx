@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import UserProfile from './components/UserProfile';
 import './App.css'
 import Counter from './components/Counter';
+src/components/Counter.jsx doesn't contain: ["Increment", "Decrement", "Reset"]
 
 function App() {
 
