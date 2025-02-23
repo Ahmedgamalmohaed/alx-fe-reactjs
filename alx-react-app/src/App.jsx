@@ -22,5 +22,6 @@ src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
     </>
   );
 }
+<UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
 
 export default App;
