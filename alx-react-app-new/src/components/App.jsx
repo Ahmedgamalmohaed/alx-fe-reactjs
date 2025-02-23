@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Counter from './components/Counter';
 import ProfilePage from './ProfilePage'; // Import ProfilePage
 import { UserProvider } from './components/UserContext'; // Import UserProvider
+src/components/UserProfile.jsx doesn't contain: ["span", "style", "color", "border", "padding", "margin", "solid", "blue", "10px"]
 
 const userData = {
   name: 'John Doe',
