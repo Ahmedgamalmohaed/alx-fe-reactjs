@@ -9,4 +9,3 @@ const UserProfile = () => {
   );
 };
 export default UserProfile;
-https://github.com/Ahmedgamalmohaed/alx-fe-reactjs/blob/main/alx-react-app/src/components/App.jsx
