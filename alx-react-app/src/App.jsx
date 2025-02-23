@@ -23,9 +23,7 @@ src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
     
       <h1>hello wolrd</h1>
       <h4>react tailwind css</h4>
-     <WelcomeMessage /> {/* Add WelcomeMessage component */}
-      <UserProfile /> {/* Add UserProfile component */}
-  
+    
     </>
   );
 }
