@@ -10,7 +10,7 @@ const UserProfile = ({ name, age, bio }) => {
     </div>
   );
 };
-
+src/components/UserProfile.jsx doesn't exist
 UserProfile.propTypes = {
   name: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
