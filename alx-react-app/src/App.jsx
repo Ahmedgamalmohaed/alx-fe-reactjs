@@ -6,7 +6,6 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
-src/App.jsx doesn't contain: ["userprofile", "<userprofile />"]
   return (
     <>
       <div>
