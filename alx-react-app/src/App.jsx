@@ -21,6 +21,15 @@ src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
       <h4>react tailwind css</h4>
     </>
   );
+   return (
+    <>
+      <WelcomeMessage />
+      <Header />
+      <MainContent />
+      <Footer />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+    </>
+  )
 }
 
 export default App;
