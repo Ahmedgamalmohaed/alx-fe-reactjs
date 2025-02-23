@@ -10,6 +10,7 @@ const UserProfile = ({ name, age, bio }) => {
     </div>
   );
 };
+src/components/UserProfile.jsx doesn't contain: ["span", "style", "color", "border", "padding", "margin", "solid", "blue", "10px"]
 UserProfile.propTypes = {
   name: PropTypes.string.isRequired,
   age: PropTypes.number.isRequired,
