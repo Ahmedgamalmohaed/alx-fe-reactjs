@@ -9,7 +9,7 @@ src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
  ["import Header from", "import MainContent from", "import Footer from"] 
   src/App.jsx doesn't contain: ["import UserProfile"]
   src/App.jsx doesn't contain: ["<Header />", "<Footer />", "<MainContent />"]
-  ["{props.name}", "{props.age}", "Age", "{props.bio}", "Bio"] 
+  src/App.jsx doesn't contain: ["name=", "Alice", "age=", "25", "bio=", "Loves hiking and photography"]
   return (
     <>
       <div>
