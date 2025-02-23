@@ -7,6 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 src/App.jsx doesn't contain: ["WelcomeMessage", "<WelcomeMessage />"]
  ["import Header from", "import MainContent from", "import Footer from"] 
+  src/App.jsx doesn't contain: ["<Header />", "<Footer />", "<MainContent />"]
   return (
     <>
       <div>
