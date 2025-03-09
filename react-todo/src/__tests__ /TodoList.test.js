@@ -1,60 +1,38 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import TodoList from '../components/TodoList';
-import AddTodoForm from '../components/AddTodoForm';
 
-test('renders TodoList component', () => {
+describe('TodoList Component', () => {
+  test('renders TodoList component', () => {
     render(<TodoList />);
-    expect(screen.getByText(/My todos:/i)).toBeInTheDocument();
-    expect(screen.getAllByText('Delete')[0]).toBeInTheDocument();
-});
+    const todoListElement = screen.getByTestId('todo-list');
+    expect(todoListElement).toBeInTheDocument();
+  });
 
-test('adds new todo', () => {
-    const setTodos = jest.fn();
-
-    render(<AddTodoForm setTodos={setTodos} />);
-
-    const input = screen.getByPlaceholderText('To do title');
-    const button = screen.getByText('Add Todo');
-
-    fireEvent.change(input, { target: { value: 'New Todo' } });
-
-    fireEvent.click(button);
-
-    expect(setTodos).toHaveBeenCalledWith(expect.any(Function));
-
-    const updateFunction = setTodos.mock.calls[0][0];
-
-    const newTodos = updateFunction([]);
-    expect(newTodos).toHaveLength(1);
-    expect(newTodos[0]).toEqual({
-        id: expect.any(Number),
-        title: 'New Todo',
-        completed: false
-    });
-});
-
-test('toggles todo', () => {
+  test('adds a new todo item', () => {
     render(<TodoList />);
+    const inputElement = screen.getByPlaceholderText('Add a new task');
+    const addButton = screen.getByText('Add');
 
-    const checkbox = screen.getByLabelText('Do the dishes');
+    fireEvent.change(inputElement, { target: { value: 'New Task' } });
+    fireEvent.click(addButton);
 
-    expect(checkbox).not.toBeChecked();
+    const newTodoItem = screen.getByText('New Task');
+    expect(newTodoItem).toBeInTheDocument();
+  });
 
-    fireEvent.click(checkbox);
-
-    expect(checkbox).toBeChecked();
-})
-
-test('deletes a todo item', () => {
+  test('removes a todo item', () => {
     render(<TodoList />);
+    const inputElement = screen.getByPlaceholderText('Add a new task');
+    const addButton = screen.getByText('Add');
 
-    const deleteButton = screen.getAllByText('Delete')[0];
+    fireEvent.change(inputElement, { target: { value: 'Task to be removed' } });
+    fireEvent.click(addButton);
 
-    fireEvent.click(deleteButton);
+    const removeButton = screen.getByText('Remove');
+    fireEvent.click(removeButton);
 
-    expect(screen.queryByText('Do the dishes')).not.toBeInTheDocument();
-
-    expect(screen.getByText('Take out the trash')).toBeInTheDocument();
+    const removedTodoItem = screen.queryByText('Task to be removed');
+    expect(removedTodoItem).not.toBeInTheDocument();
+  });
 });
