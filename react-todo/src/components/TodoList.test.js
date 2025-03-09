@@ -9,10 +9,6 @@ test('renders TodoList component', () => {
     expect(screen.getByText(/My todos:/i)).toBeInTheDocument();
     expect(screen.getAllByText('Delete')[0]).toBeInTheDocument();
 });
-test('adds a new todo item', () => {
-    render(<TodoList />);
-    const inputElement = screen.getByPlaceholderText('Add a new task');
-    const addButton = screen.getByText('Add');
 
 test('adds new todo', () => {
     const setTodos = jest.fn();
@@ -62,4 +58,3 @@ test('deletes a todo item', () => {
 
     expect(screen.getByText('Take out the trash')).toBeInTheDocument();
 });
-src/__tests__/TodoList.test.js doesn't exist
