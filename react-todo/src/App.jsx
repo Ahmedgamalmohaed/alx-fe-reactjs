@@ -11,5 +11,3 @@ function App() {
 }
 
 export default App
-
-src/__tests__/TodoList.test.js
