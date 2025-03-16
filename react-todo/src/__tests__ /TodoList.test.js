@@ -1,4 +1,4 @@
-import React from 'react';
+mport React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import TodoList from '../components/TodoList';
@@ -58,4 +58,4 @@ test('deletes a todo item', () => {
 
     expect(screen.getByText('Take out the trash')).toBeInTheDocument();
 });
-  
+
