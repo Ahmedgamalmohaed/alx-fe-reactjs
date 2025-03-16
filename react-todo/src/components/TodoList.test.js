@@ -58,4 +58,3 @@ test('deletes a todo item', () => {
 
     expect(screen.getByText('Take out the trash')).toBeInTheDocument();
 });
-src/__tests__/TodoList.test.js doesn't exist
