@@ -7,3 +7,4 @@ export default {
   },
   plugins: ["prettier-plugin-tailwindcss"],
 }
+ailwind.config.js doesn't contain: ["content"]
